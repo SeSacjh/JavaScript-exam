@@ -132,23 +132,33 @@
           } 
             for (let k = 1; k <= i+i-1; k++) {
               line += '*';              
-            }            
-             for (let l = 1; l <= lines; l++) {
-              let line2 = '';              
-             }
-              for (let m = 1; m <= lines - i; m++) {
-                line += ' ';
-              } 
-                for (let n = 1; n <= i+i-1; n++) {
-                  line += '*';              
-                }            
-                console.log(line);
+            }               
+            console.log(line);
           }
-        
+
+       for (let i = lines - 1; i >= 1; i--) {
+          let line = '';
+          for (let j = 1; j <= lines - i; j++) {
+              line += ' ';
+          } 
+            for (let k = 1; k <= i+i-1; k++) {
+              line += '*';              
+            }               
+            console.log(line);
+          } 
       }
 
-      function drawStars5() {
-        // TODO: drawStars5() 함수 내부 코드를 채워주세요.
+      function drawStars5(lines) {
+        for (let i = 1; i <= lines; i++) {
+          let line = '';
+          for (let j = lines; j >= i+1; j--) {
+              line += ' ';
+          } 
+          for (let k = 1; k <= lines; k++) {
+              line += '*';
+          }
+          console.log(line);
+        }
       }
 
       // TODO: 해당 html 파일을 실행한 브라우저 콘솔창에서 drawStars ~ drawStars5 함수를 호출해주세요!
@@ -161,7 +171,7 @@
       // drawStars3(5);
       // drawStars3(5);
 
-      drawStars4(3);
+      drawStars4(5);
       // drawStars4(5);
 
       // drawStars5(3);
