@@ -58,12 +58,15 @@
     <script>
       // TODO: 문제 조건을 만족하는 js 코드 작성
       let icecream = ['mint', 'yogurt', 'choco', 'greentea', 'vanilla'];
-      console.log(icecream);
+      // 변경 전
+      console.log('변경 전: ▶ (5) ['+ icecream + ']');
 
+      // 변경 후
       icecream.pop();
-      icecream.shift();
+      icecream.push('coffee');
       icecream.unshift('cheesecake');
-      console.log(icecream);
+      
+      console.log('변경 후: ▶ (6) ['+ icecream + ']');
 
     </script>
   </body>

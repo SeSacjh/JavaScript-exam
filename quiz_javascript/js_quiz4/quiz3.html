@@ -55,6 +55,17 @@
 
     <script>
       // TODO: 문제 조건을 만족하는 js 코드 작성
+      let fruits = ['coffee', 'blueberry', 'apple', 'pasta'];
+      // 변경 전
+      console.log('변경 전: ▶ (4) [' + "'" + fruits + "'" + ']');
+
+      // 변경 후
+      fruits.shift();
+      fruits.pop();
+      fruits.push('pineapple');
+      fruits.unshift('orange');
+
+      console.log('변경 후: ▶ (4) [' + fruits + ']');
     </script> 
   </body>
 </html>

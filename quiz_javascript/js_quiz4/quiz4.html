@@ -53,7 +53,20 @@
     </ul>
 
     <script>
-        // TODO: 문제 조건을 만족하는 js 코드 작성
+        // TODO: 문제 조건을 만족하는 js 코드 작성        
+        let charger = {          
+          '고유 번호': 21,
+          '상품명': '초고속충전기',
+          '판매자': 'Jane',
+          '재고': true,
+          '색상': ['black', 'white', 'skyblue', 'yellow'],
+          '주문량': Math.floor(Math.random() * 90) + 10,
+            toString: function() {
+            return `=== 상품 소개 ===\n고유 번호: ${this['고유 번호']}\n상품명: ${this['상품명']}\n판매자: ${this['판매자']}\n재고: ${this['재고']}\n색상: ${this['색상'].join(', ')}\n주문량: ${this['주문량']}`;
+          }
+        };
+                
+        console.log(charger.toString());
     </script> 
   </body>
 </html>

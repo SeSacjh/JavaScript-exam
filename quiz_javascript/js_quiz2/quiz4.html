@@ -87,20 +87,28 @@
       function whatDay(day) {
         if (day === 1 ) {
           console.log('whatDay('+day+')', '\n월');
-        } else if ( day === 2) {
+        } else if (day === 2) {
           console.log('whatDay('+day+')', '\n화');
-        }  else if ( day === 3) {
+        } else if (day === 3) {
           console.log('whatDay('+day+')', '\n수');
-        }  else if ( day === 4) {
+        } else if (day === 4) {
           console.log('whatDay('+day+')', '\n목');
-        }  else if ( day === 5) {
+        } else if (day === 5) {
           console.log('whatDay('+day+')', '\n금');
-        }  else if ( day === 6) {
+        } else if (day === 6) {
           console.log('whatDay('+day+')', '\n토');
-        }  else if ( day === 7) {
+        } else if (day === 7) {
           console.log('whatDay('+day+')', '\n일');
         } else {
-          console.log('whatDay('+day+')', '\nnull');
+          if (typeof day === 'string') {
+            formattedFirst = `'${day}'`;
+            console.log('whatDay('+ formattedFirst + ')');
+            console.log(null);
+          } else {
+            formattedFirst = day;
+            console.log('whatDay('+`${day}`+')');
+            console.log(null);
+          }
         }
       }
 
